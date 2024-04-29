@@ -170,6 +170,7 @@ To see how you can add code snippets, see below:
 const proudOfThisFunc = () => {
   console.log('🎉')
 }
+className="bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
