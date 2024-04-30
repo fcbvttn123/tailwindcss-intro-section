@@ -7,7 +7,7 @@ export function Header() {
     return (
         <>
             {/* Header */}
-            <div className="flex items-center justify-between max-w-96 mx-auto py-4">
+            <div className="flex items-center justify-between max-w-sm mx-auto py-4 xsm:max-w-md">
                 <button>
                     <img src="./images/logo.svg" aria-hidden="true"/>
                     <span className="sr-only">Logo</span>
