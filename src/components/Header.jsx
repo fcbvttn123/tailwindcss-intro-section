@@ -7,15 +7,17 @@ export function Header() {
     return (
         <>
             {/* Header */}
-            <div className="flex items-center justify-between max-w-sm mx-auto py-4 xsm:max-w-md">
-                <button>
-                    <img src="./images/logo.svg" aria-hidden="true"/>
-                    <span className="sr-only">Logo</span>
-                </button>
-                <button onClick={() => setIsOpen(true)}>
-                    <Bars4Icon className="w-6 h-6" aria-hidden="true"/>
-                    <span className="sr-only">Menu Button</span>
-                </button>
+            <div className="w-full px-4">
+                <div className="flex items-center justify-between mx-auto py-4">
+                    <button>
+                        <img src="./images/logo.svg" aria-hidden="true"/>
+                        <span className="sr-only">Logo</span>
+                    </button>
+                    <button onClick={() => setIsOpen(true)}>
+                        <Bars4Icon className="w-6 h-6" aria-hidden="true"/>
+                        <span className="sr-only">Menu Button</span>
+                    </button>
+                </div>
             </div>
 
             {/* Dialog (headlessui) */}
