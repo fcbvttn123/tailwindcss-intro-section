@@ -10,5 +10,5 @@ export default {
       'xsm': '520px'
     }
   },
-  plugins: [],
+  plugins: [], 
 }
