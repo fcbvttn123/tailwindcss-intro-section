@@ -157,11 +157,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
@@ -169,9 +171,19 @@ const proudOfThisFunc = () => {
 className="bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
 ```
 
+```git
+# Revert back to the latest commit
+git reset --hard HEAD
+
+# Temporarily save local changes and revert working directory to the last commit
+git stash
+
+# Retrieve stashed changes
+git stash pop
+```
+
 Others: 
 - Mobile Navigation Bar using Dialog from "headlessui library"
-- Git: revert back to the latest commit --> git reset --hard HEAD
 
 ### Continued development
 
