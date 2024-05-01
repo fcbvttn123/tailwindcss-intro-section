@@ -170,7 +170,8 @@ className="bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:rin
 ```
 
 Others: 
-- Mobile Navigation Bar using Dialog from "headlessui library" 
+- Mobile Navigation Bar using Dialog from "headlessui library"
+- Git: revert back to the latest commit --> git reset --hard HEAD
 
 ### Continued development
 
