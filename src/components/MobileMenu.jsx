@@ -1,6 +1,19 @@
-import { ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline"
+import { XMarkIcon } from "@heroicons/react/24/outline"
 import { Dialog } from "@headlessui/react"
-import { MobileMenuFeatureDropdown } from "./MobileMenuFeatureDropdown"
+import { MobileMenuDropdown } from "./MobileMenuDropdown"
+
+const featuresItems = [
+    { id: 1, href: '/todolist', label: 'Todo List', iconName: "icon-todo.svg"},
+    { id: 2, href: '/calendar', label: 'Calendar', iconName: "icon-calendar.svg"},
+    { id: 3, href: '/reminders', label: 'Reminders', iconName: "icon-reminders.svg"},
+    { id: 4, href: '/planning', label: 'Planning', iconName: "icon-planning.svg"},
+]
+
+const companyItems = [
+    { id: 1, href: '/history', label: 'History'},
+    { id: 2, href: '/ourteam', label: 'Our Team'},
+    { id: 3, href: '/blog', label: 'Blog'},
+]
 
 export function MobileMenu({isOpen, closeMobileMenu}) {
     return (
@@ -11,12 +24,8 @@ export function MobileMenu({isOpen, closeMobileMenu}) {
             <Dialog.Panel className={"bg-white absolute inset-0 left-32 px-6 pt-16"}>
                 {/* Container: Features, Company, Careers, About */}
                 <div className="flex flex-col items-start gap-y-4">
-                    <MobileMenuFeatureDropdown />
-                    <button className="flex items-center justify-between min-w-28">
-                        <span className="sr-only">Navigation Link: Company</span>
-                        <span className="text-slate-600 font-semibold text-lg">Company</span>
-                        <ChevronDownIcon className="w-4 h-4 text-slate-600" aria-hidden="true"/>
-                    </button>
+                    <MobileMenuDropdown menuButton={"Features"} menuItems={featuresItems} />
+                    <MobileMenuDropdown menuButton={"Company"} menuItems={companyItems} />
                     <button className="text-slate-600 font-semibold text-lg">Careers</button>
                     <button className="text-slate-600 font-semibold text-lg">About</button>
                 </div>
