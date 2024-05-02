@@ -184,6 +184,7 @@ git stash pop
 
 Others: 
 - Mobile Navigation Bar using Dialog from "headlessui library"
+- Menu (Dropdown) from "headlessui library"
 
 ### Continued development
 

@@ -20,7 +20,12 @@ export function MobileMenuFeatureDropdown() {
                 {
                     links.map(link => (
                         <Menu.Item key={link.id} className="text-slate-600 text-lg">
-                            {({active}) => (<a className={`${active && "bg-slate-200"} flex items-center justify-start gap-x-4 px-4 py-2 rounded-2xl cursor-pointer`}> <img className="min-w-4" src={`./images/${link.iconName}`} /> <span>{link.label}</span> </a>)}
+                            {({active}) => (
+                                <a className={`${active && "bg-slate-200"} flex items-center justify-start gap-x-4 px-4 py-2 rounded-2xl cursor-pointer`}> 
+                                    {link.iconName && <img className="min-w-4" src={`./images/${link.iconName}`} /> }
+                                    <span>{link.label}</span> 
+                                </a>
+                            )}
                         </Menu.Item>
                     ))
                 }
