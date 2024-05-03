@@ -4,7 +4,7 @@ import { ThemeContext } from "../App"
 export function Body() {
     const {windowWidth} = useContext(ThemeContext)
     return (
-        <div className="pt-4">
+        <div className="pt-4 md:flex md:flex-row-reverse items-center justify-between">
             <img src={`./images/${windowWidth >= 740 ? "image-hero-desktop.png" : "image-hero-mobile.png"}`} />
             <div className="px-4">
                 <h1 className="text-3xl font-bold text-center mt-10">Make Remote Work</h1>
