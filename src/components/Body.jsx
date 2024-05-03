@@ -5,7 +5,7 @@ export function Body() {
     const {windowWidth} = useContext(ThemeContext)
     return (
         <div className="pt-4">
-            <img src="./images/image-hero-mobile.png" alt="" />
+            <img src={`./images/${windowWidth >= 740 ? "image-hero-desktop.png" : "image-hero-mobile.png"}`} />
             <div className="px-4">
                 <h1 className="text-3xl font-bold text-center mt-10">Make Remote Work</h1>
                 <p className="text-slate-600 font-semibold text-lg text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur eos totam. Sapiente, ad quae!</p>
