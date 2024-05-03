@@ -1,4 +1,8 @@
+import { useContext } from "react"
+import { ThemeContext } from "../App"
+
 export function Body() {
+    const {windowWidth} = useContext(ThemeContext)
     return (
         <div className="pt-4">
             <img src="./images/image-hero-mobile.png" alt="" />
